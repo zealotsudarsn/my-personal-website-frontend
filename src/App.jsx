@@ -150,7 +150,7 @@ const PortfolioSection = () => {
       try {
         setLoading(true);
         // Replace with your actual backend URL
-        const response = await fetch('http://localhost:3001/api/portfolio');
+        const response = await fetch('https://my-personal-website-api.onrender.com');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

@@ -102,7 +102,7 @@ const HeroSection = ({ setCurrentPage }) => (
 // About Section Component
 const AboutSection = () => (
   <section id="about" className="py-16 bg-gray-50">
-    <div className="w-full px-6 py-16 bg-gray-50">
+    <div className="max-w-6xl mx-auto px-6 py-16 bg-gray-50">
       <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">About Me</h2>
       <div className="flex flex-col md:flex-row items-center md:space-x-12">
         <div className="md:w-1/3 mb-8 md:mb-0">
@@ -244,7 +244,7 @@ const ContactSection = () => {
 
     try {
       // Replace with your actual backend URL
-      const response = await fetch('http://localhost:3001/api/contact', {
+      const response = await fetch('https://my-personal-website-api.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -293,7 +293,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-6 max-w-2xl">
+      <div className="container mx-auto px-6 max-w-4xl">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Contact Me</h2>
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <p className="text-gray-700 text-lg mb-6 text-center">

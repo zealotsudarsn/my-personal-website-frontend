@@ -107,7 +107,7 @@ const AboutSection = () => (
       <div className="flex flex-col md:flex-row items-center md:space-x-12">
         <div className="md:w-1/3 mb-8 md:mb-0">
           <img
-            src="https://i.imgur.com/6gvkzQ1.png"
+            src="https://i.imgur.com/NUNn0EJ.jpeg"
             alt="Your Photo"
             className="rounded-full shadow-xl w-64 h-64 mx-auto object-cover border-4 border-purple-500"
           />

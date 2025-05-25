@@ -704,26 +704,34 @@ export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    // Add `overflow-x-hidden` to the outermost div
+    <div className="min-h-screen bg-gray-50 overflow-x-hidden"> {/* <--- ADD THIS CLASS */}
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-        
+
         * {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
         }
-        
+
         body {
           font-family: 'Inter', sans-serif;
           line-height: 1.6;
           color: #333;
+          overflow-x: hidden; /* <--- ADD THIS LINE */
+          background-color: #f8fafc; /* Ensure a consistent background for areas not explicitly colored */
         }
-        
+
+        html {
+          overflow-x: hidden; /* <--- ADD THIS LINE */
+          background-color: #f8fafc; /* Ensure a consistent background for areas not explicitly colored */
+        }
+
         .animate-fade-in-up {
           animation: fadeInUp 0.8s ease-out forwards;
         }
-        
+
         @keyframes fadeInUp {
           from {
             opacity: 0;
@@ -734,33 +742,33 @@ export default function App() {
             transform: translateY(0);
           }
         }
-        
+
         .line-clamp-3 {
           display: -webkit-box;
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
           overflow: hidden;
         }
-        
+
         /* Smooth scrolling */
         html {
           scroll-behavior: smooth;
         }
-        
+
         /* Custom scrollbar */
         ::-webkit-scrollbar {
           width: 8px;
         }
-        
+
         ::-webkit-scrollbar-track {
           background: #f1f1f1;
         }
-        
+
         ::-webkit-scrollbar-thumb {
           background: linear-gradient(45deg, #8b5cf6, #3b82f6);
           border-radius: 10px;
         }
-        
+
         ::-webkit-scrollbar-thumb:hover {
           background: linear-gradient(45deg, #7c3aed, #2563eb);
         }

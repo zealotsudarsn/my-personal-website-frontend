@@ -1,0 +1,20 @@
+yesto aauna parxa chalna ko lagi, first of all chgne directory and later, npm run dev ,
+
+PS C:\Users\ADMIN> cd "E:\Desktop\Websites  created\frontend"
+PS E:\Desktop\Websites  created\frontend> npm run dev
+
+> frontend@0.0.0 dev
+> vite
+
+
+  VITE v6.3.5  ready in 570 ms
+
+
+
+
+  VITE v6.3.5  ready in 570 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+                          

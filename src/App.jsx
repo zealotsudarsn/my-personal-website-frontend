@@ -72,9 +72,9 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
 // Hero Section Component
 const HeroSection = ({ setCurrentPage }) => (
   <section className="relative h-screen flex items-center justify-center bg-cover bg-center text-white"
-    style={{ backgroundImage: "url('https://i.imgur.com/cXT3aFz.jpeg')" }}>
+    style={{ backgroundImage: "url('https://i.imgur.com/z9SzZqZ.png')" }}>
     <div className="absolute inset-0 bg-black opacity-60"></div>
-    <div className="z-10 text-center p-6 mx-auto">
+    <div className="z-10 text-center p-6 mx-auto max-w-4xl"> {/* ADDED max-w-4xl HERE */}
       <h1 className="text-5xl md:text-7xl font-extrabold mb-4 animate-fade-in-up">
         Hi, I'm <span className="text-purple-300">Sudarshan Sapkota</span>
       </h1>
@@ -117,7 +117,7 @@ const AboutSection = () => (
             Hello! I'm <span className="font-semibold text-purple-700">Sudarshan Sapkota</span>, a civil engineer with a passion for change. My journey in design began 2022 and since then, I've been dedicated to make myself better everyday.
           </p>
           <p className="mb-4">
-            I specialize in creation, design, geotechnical engineering, machine learning, and AI. I thrive on solving complex problems and creating elegant, user-friendly solutions. I believe in continuous learning and adapting to new technologies.
+            I specialize in creation, design, engineering, machine learning, and AI. I thrive on solving complex problems and creating elegant, user-friendly solutions. I believe in continuous learning and adapting to new technologies.
           </p>
           <p>
             Outside of work, you can find me hiking in the mountains, experimenting with new recipes, riding. I'm always looking for new challenges and opportunities to grow.
@@ -125,8 +125,8 @@ const AboutSection = () => (
           <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">My Skills</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              'React', 'Node.js', 'Tailwind CSS', 'JavaScript', 'Python', 'Firebase',
-              'UI/UX Design', 'Database Management', 'API Development', 'Problem Solving'
+              'Engineering', 'Civil Engineering', 'Python', 'Geotechnical Engineeing', 'Javascript', 'Machine Learning',
+              'Design', 'Database Management', 'API Development', 'Problem Solving'
             ].map((skill, index) => (
               <span key={index} className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium shadow-sm">
                 {skill}

@@ -277,7 +277,7 @@ const PortfolioSection = () => {
     const fetchPortfolio = async () => {
       try {
         setLoading(true);
-        const response = await fetch('https://my-personal-website-api.onrender.com');
+        const response = await fetch('https://my-personal-website-api.onrender.com/api/portfolio');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
